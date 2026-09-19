@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karl Portfolio</title>
+
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        scroll-behavior:smooth;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        background-color: bisque;
+        color: #222;
+    }
+    header{
+        width:100%;
+        height:70px;
+        background-color:rgb(221, 194, 154);
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0 50px;
+        position: sticky;
+        top:0;
+        z-index:1000;
+        box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo{
+        font-size:28px;
+        font-weight:bold;
+        font-family:fantasy;
+    }
+    nav{
+        display:flex;
+        gap:30px;
+    }
+    nav a{
+        text-decoration:none;
+        color:rgb(31, 31, 31);
+        font-weight:bold;
+    }
+    nav a:hover{
+        color:gray
+    }
+    .hero{
+        min-height:600px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding: 70px 10%;
+        background-color: bisque;
+    }
+    .hero-name{
+        width:50%;
+    }
+    .hero-name h1{
+        font-size:55px;
+        line-height: 1.1;
+    }
+    .hero-right {
+        width: 40%;
+        text-align:center;
+    }
+    .hero-right img{
+        width:280px;
+        height:280px;
+        object-fit:cover;
+        border-radius:50%;
+        border:5px solid #222;
+    }
+    .buttons{
+        margin-top:20px;
+    }
+    .buttons a{
+        display:inline-block;
+        text-decoration:none;
+        padding:12px 25px;
+        margin:5px;
+        border-radius:6px;
+        background-color:#222;
+        color:white;
+        font-weight:bold;
+    }
+    .buttons a:hover{
+        background-color:#555;
+        }
+    section{
+        min-height:500px;
+        padding:80px 10%;
+    }
+    section h2{
+        font-size:40px;
+        margin-bottom:30px;
+        }
+    #about{
+        background-color:bisque;
+    }
+    #contact{
+        background-color:bisque;
+    }
+    footer{
+        height:70px;
+        background-color:#222;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+        padding:0 40px;
+    }
+    .para{
+        align-content:center;
+        padding:50px;
+        border:1px solid;
+        background-color:rgb(194, 156, 108);
+        border-radius:30px;
+        margin-left:100px;
+        margin-bottom:30px;
+        font-weight:bold;
+    }
+    .para2{
+        align-content:center;
+        padding:50px;
+        background-color:rgb(194, 156, 108);
+        border-radius:30px;
+        margin-left:100px;
+        margin-right:400px;
+        margin-bottom:30px;
+        font-weight:bold;
+        border:1px solid;
+    }
+    .container{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+    .boxleft{
+        width:45%;
+        padding:20px;
+        background-color:rgb(194, 156, 108);
+        border:1px solid;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        font-weight:bold;
+        margin-left:78px;
+        border-radius:30px; 
+    }
+    .boxright{
+        width:45%;
+        padding:20px;
+        background-color:rgb(194, 156, 108);
+        border:1px solid;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        font-weight:bold;
+        margin-right:-15px;
+        border-radius:30px;  
+    }
+    .boxleft,
+    .boxright{
+        height:190px;
+    }
+    @media(max-width:700px) 
+    {
+    header{
+        padding:0 20px;
+    }
+    nav{
+        gap:10px;
+        font-size:13px;
+    }
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+    .hero-name,
+    .hero-right{
+        width:100%;
+    }
+    .hero-name h1{
+        font-size:40px;
+    }
+    .hero-right img{
+        width:220px;
+        height:220px;
+    }
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KARL</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+
+    <div class="hero-name">
+        <h1>Karl Johnmark<br>Gabriel V. Gaspar</h1>
+        <p>I always explore in technology in computers</p>
+    </div>
+    <div class="hero-right">
+            <img src="images/Fomalkarl.png" alt="Karl's Photo">
+            <div class="buttons">
+            <a href="#about">Explore</a>
+            <a href="https://canva.link/0olsuee0bpb8446" target="_blank">
+            Resume
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="para">
+            My name is Karl Johnmark Gabriel V. Gaspar, I was born in November 30, 2011.
+            I am 14 years old, and I am a grade 9 student who is studying at Gonzaga National High School.
+            I always enjoyed exploring technology in computers. 
+            And I have learned Microsoft Word, Microsoft Powerpoint, Microsoft Excel,
+            And HTML codings at Aparri Lyceum ATP. And im a incoming graduating student at Lyceum 
+        </p>
+        <div class="container">
+            <div class="boxleft">
+                <h3>Elementary Awards/Medals</h3>
+                <p>Grade 4: With Honors</p>
+                <p>Grade 5: With Honors</p>
+                <p>Grade 6: Taekwondo-</p>
+                <p>Municipal: Gold</p>
+                <p>Provincial: Silver</p>
+            </div>
+            <div class="boxright">
+                <h3>Highschool Awards/Medals</h3>
+                <p>Grade 7: Taekwondo-</p>
+                <p>Intrams- Gold</p>
+                <p>Grade 8: With Honors</p>
+                <p>Taekwondo-</p>
+                <p>Intrams: Gold</p>
+                <p>Grade 9: Still Processing</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="para2">Phone: 09158158925</p>
+        <p class="para2">Email: karljohnmarkgabrielgaspar@gmail.com</p>
+        <p class="para2">Facebook: Johnmark Gabriel Gaspar</p>
+        <p class="para2">Location: Smart, Gonzaga, Cagayan</p>
+    </section>
+
+    <footer>
+        <p>©2026 by Karl Johnmark Gabriel V. Gaspar and secured by KARL</p>
+    </footer>
+
+</body>
+</html>
